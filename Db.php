@@ -394,6 +394,7 @@ class Varien_Data_Collection_Db extends Varien_Data_Collection
 
             $resultCondition = '(' . join(') ' . Zend_Db_Select::SQL_OR . ' (', $conditions) . ')';
         }
+
         $this->_select->where($resultCondition);
 
         return $this;
